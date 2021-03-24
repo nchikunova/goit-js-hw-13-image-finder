@@ -22,6 +22,8 @@ function onGalleryClick(event) {
     if (event.target.nodeName === 'BUTTON' || event.code === 'Escape') {
       instance.close();
     }
+
+    window.removeEventListener('keydown', onClose);
   }
 
   const closeModalBtnRef = document.querySelector('.closeModalBtn');

@@ -12,7 +12,7 @@ function onGalleryClick(event) {
   }
   const instance = basicLightbox.create(`
     <div class="modal">
-      <img src=${event.target.dataset.largeUrl} alt=""/>
+      <img width="900" height="600" src=${event.target.dataset.largeUrl} alt=""/>
       <button type="button" class="closeModalBtn"></button>
     </div>
 `);
